@@ -2,8 +2,8 @@
 {
     public class NotaAluno
     {
-        public string RaAluno {  get; set; }
-        public string idDicipina {  get; set; }
+        public int RaAluno {  get; set; }
+        public int idDicipina {  get; set; }
         public double Nota { get; set; }
         public double Fequencia { get; set; }
 

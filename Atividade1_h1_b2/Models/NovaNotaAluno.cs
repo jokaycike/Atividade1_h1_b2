@@ -5,9 +5,9 @@ namespace Atividade1_h1_b2.Models
     public class NovaNotaAluno
     {
         [Required(ErrorMessage = "Obrigatório")]
-        public string RaAluno { get; set; }
+        public int RaAluno { get; set; }
         [Required(ErrorMessage = "Obrigatório")]
-        public string idDicipina { get; set; }
+        public int idDicipina { get; set; }
         [Required(ErrorMessage = "Obrigatório")]
         public double Nota { get; set; }
         [Required(ErrorMessage = "Obrigatório")]

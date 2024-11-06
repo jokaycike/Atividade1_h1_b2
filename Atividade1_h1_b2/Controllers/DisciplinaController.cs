@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Atividade1_h1_b2.Controllers
 {
+    [ApiController]
+    [Route("api/Disciplina")]
     public class DisciplinaController : ControllerBase
     {
         private readonly IDisciplinaService _disciplinaService;

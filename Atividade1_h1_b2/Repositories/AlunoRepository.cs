@@ -16,7 +16,7 @@ namespace Atividade1_h1_b2.Repositories
                 email = novoAluno.email,
                 nome = novoAluno.nome,
                 telefone = novoAluno.telefone,
-                RA = novoAluno.RA
+                ra = novoAluno.RA
             });
         }
 

@@ -2,8 +2,10 @@
 {
     public class Disciplina
     {
-        public string IdDisciplina { get; set; }
+        public int IdDisciplina { get; set; }
         public string Nome { get; set; }
         public string Curso { get; set; }
+
+        public int Id { get; set; }
     }
 }

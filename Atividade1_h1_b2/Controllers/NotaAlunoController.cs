@@ -18,13 +18,37 @@ namespace Atividade1_h1_b2.Controllers
         [Route("Inserir")]
         public IActionResult Inserir(NovaNotaAluno nota)
         {
-            if (!ModalState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            bool flInseriu = _notaAlunoService.Inserir(nota);
+            try
+            {
+                _notaAlunoService.Inserir(nota);
+                return Ok($"Nota para o aluno {nota.RaAluno} na discilina {nota.idDicipina} inserida");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro ao inserir nota: {ex.Message}");
+            }
+
+        }
+
+        [HttpGet]
+        [Route("ListaAprovados")]
+        public IActionResult ListarAprovados()
+        {
+            var alunosAprovados = _notaAlunoService.ListaAlunosAprovados();
+            return Ok(alunosAprovados);
+        }
+
+        [HttpGet]
+        [Route("ListaReprovados")]
+        public IActionResult ListarReprovados()
+        {
+            var alunosReprovados = _notaAlunoService.ListaAlunosReprovados();
+            return Ok(alunosReprovados);
         }
     }
-    //inserir nota, listaAlunosAprovados, listaAlunosReprovads
 }

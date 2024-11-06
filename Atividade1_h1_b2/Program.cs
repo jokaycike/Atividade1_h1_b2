@@ -16,6 +16,9 @@ builder.Services.AddScoped<IAlunoService, AlunoService>();
 builder.Services.AddScoped<IDisciplinaRepository, DisciplinaRepository>();
 builder.Services.AddScoped<IDisciplinaService, DisciplinaService>();
 
+builder.Services.AddScoped<INotaAlunoRepository, NotaAlunoRepository>();
+builder.Services.AddScoped<INotaAlunoService, NotaAlunoService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

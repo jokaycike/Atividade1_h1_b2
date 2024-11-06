@@ -6,7 +6,7 @@ namespace Atividade1_h1_b2.Models
     {
 
         [Required(ErrorMessage = "Obrigatório")]
-        public string IdDisciplina { get; set; }
+        public int IdDisciplina { get; set; }
 
         [Required(ErrorMessage = "Obrigatório")]
         public string Nome { get; set; }

@@ -7,6 +7,6 @@
         public string telefone { get; set; }
         public string cpf { get; set; }
 
-        public string RA { get; set; }
+        public int ra { get; set; }
     }
 }

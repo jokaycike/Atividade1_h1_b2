@@ -20,7 +20,7 @@ namespace Atividade1_h1_b2.Models
         public int idade { get; set; }
 
         [MaxLength(6, ErrorMessage = "Maximo 6 letras")]
-        public string RA { get; set; }
+        public int RA { get; set; }
 
     }
 }
