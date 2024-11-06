@@ -1,4 +1,5 @@
 ﻿using Atividade1_h1_b2.Models;
+using Atividade1_h1_b2.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Atividade1_h1_b2.Controllers
@@ -13,15 +14,15 @@ namespace Atividade1_h1_b2.Controllers
         }
 
         [HttpPost]
-        [Route("InserirDisciplina")]
-        public IActionResult InserirDisciplina(NovaDisciplina dados)
+        [Route("Inserir")]
+        public IActionResult Inserir(NovaDisciplina dados)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            bool fliInseriu = _disciplinaService.InserirDisciplina(dados);
+            bool fliInseriu = _disciplinaService.Inserir(dados);
 
             if (fliInseriu) return Ok($"Disciplina {dados.Nome} inserido com sucesso");
 
@@ -35,8 +36,5 @@ namespace Atividade1_h1_b2.Controllers
             return Ok(_disciplinaService.obterTodasDisciplinas());
         }
 
-        //criar 
-        //    buscartodas 
-        //    repositorio e service
     }
 }

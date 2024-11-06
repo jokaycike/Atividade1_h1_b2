@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Atividade1_h1_b2.Validations;
 
 namespace Atividade1_h1_b2.Models
 {

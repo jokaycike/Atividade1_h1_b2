@@ -18,6 +18,11 @@ namespace Atividade1_h1_b2.Repositories
             });
         }
 
+        public Disciplina obterDisciplinaPorNome(string Nome)
+        {
+            return dadosDiciplinaList.Where(a => a.Nome == Nome).FirstOrDefault();
+        }
+
         public List<Disciplina> obterTodasDisciplinas()
         {
             return dadosDiciplinaList;
