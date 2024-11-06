@@ -6,7 +6,7 @@ namespace Atividade1_h1_b2.Repositories
     {
         public void Inserir(NovaNotaAluno novaNotaAluno);
 
-        bool AlunoExist(int raAluno);
+        bool AlunoExiste(int raAluno);
         bool DisciplinaExiste(int idDisciplina);
         bool NotaJaExiste(int raAluno, int idDisciplina);
         public List<NotaAluno> ListaAlunosAprovados();

@@ -25,9 +25,9 @@ namespace Atividade1_h1_b2.Repositories
             return dadosAlunosList.Where(a => a.cpf == cpf).FirstOrDefault();
         }
 
-        public DadosAluno obterAlunosPorRa(string ra)
+        public DadosAluno obterAlunosPorRa(int ra)
         {
-            return dadosAlunosList.Where(a => a.RA == ra).FirstOrDefault();
+            return dadosAlunosList.Where(a => a.ra == ra).FirstOrDefault();
         }
 
         public List<DadosAluno> obterTodosAlunos()

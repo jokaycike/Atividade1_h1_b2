@@ -30,7 +30,7 @@ namespace Atividade1_h1_b2.Services
             return true;
         }
 
-        public DadosAluno obterAlunosPorRa(string RA)
+        public DadosAluno obterAlunosPorRa(int RA)
         {
             return _alunoRepository.obterAlunosPorRa(RA);
         }

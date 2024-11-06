@@ -6,7 +6,7 @@ namespace Atividade1_h1_b2.Repositories
     {
         public List<DadosAluno> obterTodosAlunos();
         public DadosAluno obterAlunosPorCpf(string cpf);
-        public DadosAluno obterAlunosPorRa(string ra);
+        public DadosAluno obterAlunosPorRa(int ra);
         public void Inserir(NovoAluno novoAluno);
     }
 }
